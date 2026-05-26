@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake Build and Run",
+           "command": "cmake --build build && .\\build\\Arugo.exe",
+"type": "shell",
+"options": {
+    "shell": {
+        "executable": "cmd.exe",
+        "args": ["/C"]
+    }
+},
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

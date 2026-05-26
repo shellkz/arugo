@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "CMake Build and Run",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arugo.exe",
+            "preLaunchTask": "CMake Build and Run",
+            "cwd": "${workspaceFolder}/build"
+        }
+    ]
+}

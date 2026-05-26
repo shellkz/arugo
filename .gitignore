@@ -1,0 +1,31 @@
+# Build directories
+build/
+build-check/
+out/
+
+# CMake cache
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+.cmake/
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+
+# IDE - keep .vscode tracked (team settings)
+# Uncomment below to ignore .vscode entirely:
+# .vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Claude Code internal
+.claude/

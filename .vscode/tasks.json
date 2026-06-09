@@ -2,15 +2,28 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "CMake Configure Debug",
+            "type": "shell",
+            "command": "cmake -B build/debug -DCMAKE_BUILD_TYPE=Debug -G \"MinGW Makefiles\"",
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/C"]
+                }
+            },
+            "group": "build"
+        },
+        {
             "label": "CMake Build and Run",
-           "command": "cmake --build build && .\\build\\Arugo.exe",
-"type": "shell",
-"options": {
-    "shell": {
-        "executable": "cmd.exe",
-        "args": ["/C"]
-    }
-},
+            "type": "shell",
+            "command": "cmake --build build/debug && .\\build\\debug\\Arugo.exe",
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/C"]
+                }
+            },
+            "dependsOn": "CMake Configure Debug",
             "group": {
                 "kind": "build",
                 "isDefault": true
